@@ -4,6 +4,10 @@ public class Bullet : MonoBehaviour
 {
     public int damage = 10; // Bullet'ýn vereceði hasar miktarý
 
+    private void Start()
+    {
+       
+    }
     private void OnTriggerEnter(Collider other)
     {
 
@@ -18,7 +22,12 @@ public class Bullet : MonoBehaviour
                 // Hasar ver
                 Debug.Log("Düþmana hasar verdi.");
                 enemyHealth.TakeDamage(damage);
+                Destroy(gameObject);
+
             }
         }
     }
+
+
+    
 }

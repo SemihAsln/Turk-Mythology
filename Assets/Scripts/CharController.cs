@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _input;
     private bool _isDashing = false;
     private bool _canDash = true;
-    private bool _isAttacking = false;
+    public bool _isAttacking = false;
 
     private void Start()
     {
@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
     {
         var arrow = Instantiate(arrowPrefab, arrowspawnpoint.position, arrowspawnpoint.rotation);
         arrow.GetComponent<Rigidbody>().velocity = arrowspawnpoint.forward * bulletSpeed;
+        Destroy(arrow, 4f);
     }
 
 
