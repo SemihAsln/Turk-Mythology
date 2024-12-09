@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform arrowspawnpoint;
+    public GameObject arrowPrefab;
+    public float bulletSpeed = 10; //for arrow 
+
+
     Animator animator;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
@@ -17,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _input;
     private bool _isDashing = false;
     private bool _canDash = true;
+    private bool _isAttacking = false;
 
     private void Start()
     {
@@ -28,34 +34,36 @@ public class PlayerController : MonoBehaviour
         GatherInput();
         Look();
 
-        // Sadece hareketsizken saldýrý
-        if (_input.magnitude == 0 && !_isDashing && Input.GetMouseButtonDown(0))
+        // Eðer saldýrý yapýlýyorsa hareket etme
+        if (_isAttacking)
+            return;
+
+        if (_input.magnitude > 0 && !_isDashing)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
+        // Saldýrý
+        if (Input.GetMouseButtonDown(0) && !_isDashing)
         {
             Attack();
         }
 
+        // Dash
         if (Input.GetMouseButtonDown(1) && _canDash)
         {
             animator.SetBool("IsDashing", true);
             StartCoroutine(Dash());
         }
-
-       
-
-        // Hareket animasyonu
-        if (_input.magnitude > 0 && !_isDashing) // Eðer hareket varsa
-        {
-            animator.SetBool("IsWalking", true);
-        }
-        else // Hareket yoksa
-        {
-            animator.SetBool("IsWalking", false);
-        }
     }
 
     private void FixedUpdate()
     {
-        if (!_isDashing)
+        if (!_isDashing && !_isAttacking)
         {
             Move();
         }
@@ -68,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
     private void Look()
     {
-        if (_input == Vector3.zero) return;
+        if (_input == Vector3.zero || _isAttacking) return;
 
         var rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
@@ -76,8 +84,6 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        animator.SetBool("IsWalking", true);
-        animator.SetBool("IsDashing", false);
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
     }
 
@@ -96,17 +102,31 @@ public class PlayerController : MonoBehaviour
         }
 
         _isDashing = false;
+        animator.SetBool("IsDashing", false);
 
-        // Cooldown before next dash
+        // Dash sonrasý animasyon durumunu kontrol et
+        if (_input.magnitude > 0) // Eðer hareket varsa
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else // Hareket yoksa
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
         yield return new WaitForSeconds(_dashCooldown);
         _canDash = true;
     }
 
     private void Attack()
     {
+        _isAttacking = true;
+        _input = Vector3.zero; // Saldýrý sýrasýnda hareket giriþlerini sýfýrla
+
         if (bow.activeSelf)
         {
             animator.SetBool("IsAttackingBow", true);
+            BowAttack();
         }
 
         if (sword.activeSelf)
@@ -114,16 +134,24 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsAttackingSword", true);
         }
 
-        // Saldýrýyý bitir ve animasyonu sýfýrla
         StartCoroutine(ResetAttack());
     }
 
     private IEnumerator ResetAttack()
     {
-        yield return new WaitForSeconds(0.1f); // Saldýrý animasyonunun süresine göre ayarlanabilir
+        yield return new WaitForSeconds(0.5f); // Saldýrý animasyonunun süresi kadar bekle
         animator.SetBool("IsAttackingBow", false);
         animator.SetBool("IsAttackingSword", false);
+        _isAttacking = false;
     }
+
+    private void BowAttack() 
+    {
+        var arrow = Instantiate(arrowPrefab, arrowspawnpoint.position, arrowspawnpoint.rotation);
+        arrow.GetComponent<Rigidbody>().velocity = arrowspawnpoint.forward * bulletSpeed;
+    }
+
+
 }
 
 public static class Helpers
