@@ -87,36 +87,50 @@ public class PlayerController : MonoBehaviour
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
     }
 
-    private IEnumerator Dash()
+private IEnumerator Dash()
+{
+    _isDashing = true;
+    _canDash = false;
+
+    Vector3 dashDirection = transform.forward;
+    float dashEndTime = Time.time + _dashDuration;
+
+    // Collider'ý devre dýþý býrak
+    Collider playerCollider = GetComponent<Collider>();
+    if (playerCollider != null)
     {
-        _isDashing = true;
-        _canDash = false;
-
-        Vector3 dashDirection = transform.forward;
-        float dashEndTime = Time.time + _dashDuration;
-
-        while (Time.time < dashEndTime)
-        {
-            _rb.MovePosition(transform.position + dashDirection * _dashSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        _isDashing = false;
-        animator.SetBool("IsDashing", false);
-
-        // Dash sonrasý animasyon durumunu kontrol et
-        if (_input.magnitude > 0) // Eðer hareket varsa
-        {
-            animator.SetBool("IsWalking", true);
-        }
-        else // Hareket yoksa
-        {
-            animator.SetBool("IsWalking", false);
-        }
-
-        yield return new WaitForSeconds(_dashCooldown);
-        _canDash = true;
+        playerCollider.enabled = false;
     }
+
+    while (Time.time < dashEndTime)
+    {
+        _rb.MovePosition(transform.position + dashDirection * _dashSpeed * Time.deltaTime);
+        yield return null;
+    }
+
+    _isDashing = false;
+    animator.SetBool("IsDashing", false);
+
+    // Dash sonrasý animasyon durumunu kontrol et
+    if (_input.magnitude > 0) // Eðer hareket varsa
+    {
+        animator.SetBool("IsWalking", true);
+    }
+    else // Hareket yoksa
+    {
+        animator.SetBool("IsWalking", false);
+    }
+
+    // Collider'ý tekrar etkinleþtir
+    if (playerCollider != null)
+    {
+        playerCollider.enabled = true;
+    }
+
+    yield return new WaitForSeconds(_dashCooldown);
+    _canDash = true;
+}
+
 
     private void Attack()
     {
