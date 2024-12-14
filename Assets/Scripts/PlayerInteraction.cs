@@ -2,65 +2,89 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    // Raycast'in ulaþabileceði mesafe
     public float rayDistance = 5f;
-
-    // Etkileþim tuþu
     public KeyCode interactKey = KeyCode.E;
 
-    // Etkileþimde olunan objeyi takip etmek için
     private GameObject currentInteractable;
+
+    // Dialogue kutusunu referans al
+    public GameObject dialogueBox;
+    public GameObject backgroundPanel;
+
+    void Start()
+    {
+        // Dialogue kutusu ve arka plan maskesi baþlangýçta gizli
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+
+        if (backgroundPanel != null)
+        {
+            backgroundPanel.SetActive(false);
+        }
+    }
 
     void Update()
     {
-        // Ray'i player objesinin pozisyonundan ve forward yönünden gönderiyoruz
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        // Raycast gönder ve çarpan bir objeyi kontrol et
         if (Physics.Raycast(ray, out hit, rayDistance))
         {
             GameObject hitObject = hit.collider.gameObject;
 
-            // Çarpýlan objenin tag'ini kontrol et
             if (hitObject.CompareTag("Interactable"))
             {
-                // Þu an etkileþimde olunan objeyi takip et
                 currentInteractable = hitObject;
 
-                // UI veya benzeri bir bilgi göstermek için
                 Debug.Log("Etkileþim mümkün: " + hitObject.name);
 
-                // Oyuncu "E" tuþuna basarsa
                 if (Input.GetKeyDown(interactKey))
                 {
-                    InteractWithObject(hitObject);
+                    ShowDialogue();
                 }
             }
             else
             {
-                // Eðer tag eþleþmezse, sýfýrla
                 currentInteractable = null;
             }
         }
         else
         {
-            // Eðer hiçbir þeye çarpmýyorsa, sýfýrla
             currentInteractable = null;
         }
     }
 
-    // Etkileþim iþlemleri burada yapýlýr
-    private void InteractWithObject(GameObject interactable)
+    void ShowDialogue()
     {
-        Debug.Log(interactable.name + " ile etkileþime geçildi!");
+        if (dialogueBox != null && backgroundPanel != null)
+        {
+            // Dialogue kutusunu ve arka plan maskesini göster
+            dialogueBox.SetActive(true);
+            backgroundPanel.SetActive(true);
 
-        // Örneðin: Kapý açma, nesne alma gibi iþlevler burada tanýmlanabilir
+            Dialogue dialogueComponent = dialogueBox.GetComponent<Dialogue>();
+            if (dialogueComponent != null)
+            {
+                dialogueComponent.StartDialogue();
+            }
+        }
     }
 
-    // Ray'i görselleþtirmek için
+    public void HideDialogue()
+    {
+        if (dialogueBox != null && backgroundPanel != null)
+        {
+            // Dialogue kutusunu ve arka plan maskesini gizle
+            dialogueBox.SetActive(false);
+            backgroundPanel.SetActive(false);
+        }
+    }
+
     private void OnDrawGizmos()
     {
+        // Ray'i görselleþtirmek için
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.forward * rayDistance);
     }
