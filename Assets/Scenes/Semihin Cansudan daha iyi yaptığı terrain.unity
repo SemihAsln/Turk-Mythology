@@ -2703,8 +2703,8 @@ MonoBehaviour:
   bulletSpeed: 40
   _rb: {fileID: 1856426916}
   _speed: 8
-  _turnSpeed: 1080
-  _dashSpeed: 60
+  _turnSpeed: 540
+  _dashSpeed: 30
   _dashDuration: 0.2
   _dashCooldown: 0.3
   bow: {fileID: 1494276843}
