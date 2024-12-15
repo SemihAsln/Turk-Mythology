@@ -28,7 +28,7 @@ public class CyclopsAI : MonoBehaviour
     {
         // Oyuncuyu etiketine göre bul
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        agent = GetComponent<NavMeshAgent>(); // NavMeshAgent bileþenini al
+        agent = GetComponentInParent<NavMeshAgent>(); // NavMeshAgent bileþenini al
        
         animator = GetComponent<Animator>(); 
     }
@@ -99,7 +99,7 @@ public class CyclopsAI : MonoBehaviour
     {
         agent.SetDestination(transform.position);
 
-        transform.LookAt(player);
+        //transform.LookAt(player);
 
         animator.SetBool("IsWalking", false);
 
