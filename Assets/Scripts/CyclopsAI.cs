@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public class CyclopsAI : MonoBehaviour
 {
     public Transform player; // Oyuncunun Transform bileþeni
     private NavMeshAgent agent; // NavMeshAgent bileþeni
 
     public LayerMask whatIsGround,whatIsPlayer;
+
+    [SerializeField] Animator animator;
+  
 
     //Patrolling 
     public Vector3 walkPoint;
@@ -26,6 +29,8 @@ public class EnemyAI : MonoBehaviour
         // Oyuncuyu etiketine göre bul
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent bileþenini al
+       
+        animator = GetComponent<Animator>(); 
     }
 
     void Update()
@@ -58,6 +63,7 @@ public class EnemyAI : MonoBehaviour
         if(walkPointSet)
         {
             agent.SetDestination(walkPoint);
+            animator.SetBool("IsWalking", true);
         }
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
@@ -85,6 +91,8 @@ public class EnemyAI : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        animator.SetBool("IsWalking", true);
+       
     }
 
     private void AttackPlayer()
@@ -93,10 +101,13 @@ public class EnemyAI : MonoBehaviour
 
         transform.LookAt(player);
 
-        if(!AlreadyAttacked)
+        animator.SetBool("IsWalking", false);
+
+        if (!AlreadyAttacked)
         {
 
             //THE ATTACKING CODE SHOULD BE HERE 
+            CyclopsAttack();
             Debug.Log("Düþman Saldýrýyor");
 
             AlreadyAttacked = true;
@@ -106,12 +117,63 @@ public class EnemyAI : MonoBehaviour
 
     private void ResetAttack()
     {
+        animator.SetBool("Attack1", false);
+        animator.SetBool("Attack2", false);
+        animator.SetBool("Attack3", false);
+        animator.SetBool("Attack4", false);
+        animator.SetBool("InIdle", true);
+        
         AlreadyAttacked = false;
     }
     public void OnDeath()
     {
         // Düþman öldüðünde hareketi durdur
         Debug.Log("OnDeath Metodu çalýþtý");
+        animator.SetBool("IsDead", true);
+        animator.SetBool("Attack1", false);
+        animator.SetBool("Attack2", false);
+        animator.SetBool("Attack3", false);
+        animator.SetBool("Attack4", false);
+        animator.SetBool("IsWalking", false);
+
         agent.isStopped = true;
     }
+
+    private void CyclopsAttack()
+    {
+        int Attackrandomizer = Random.Range(1, 4);
+        if(Attackrandomizer== 1)
+        {
+            animator.SetBool("Attack1", true);
+            animator.SetBool("Attack2", false);
+            animator.SetBool("Attack3", false);
+            animator.SetBool("Attack4", false);
+        }
+        if (Attackrandomizer == 2)
+        {
+            animator.SetBool("Attack2", true);
+            animator.SetBool("Attack1", false);
+            animator.SetBool("Attack3", false);
+            animator.SetBool("Attack4", false);
+        }
+        if (Attackrandomizer == 3)
+        {
+            animator.SetBool("Attack3", true);
+            animator.SetBool("Attack2", false);
+            animator.SetBool("Attack1", false);
+            animator.SetBool("Attack4", false);
+        }
+        if (Attackrandomizer == 4)
+        {
+            animator.SetBool("Attack4", true);
+            animator.SetBool("Attack2", false);
+            animator.SetBool("Attack3", false);
+            animator.SetBool("Attack1", false);
+        }
+
+    }
+
+
+
+
 }

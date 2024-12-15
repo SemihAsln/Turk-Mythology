@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
             Debug.Log("Düþmana isabet etti.");
             // Enemy'deki Health script'ini al
             EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
+            CyclopsHealth cyclopsHealth = other.GetComponent<CyclopsHealth>();
             if (enemyHealth != null)
             {
                 // Hasar ver
@@ -24,6 +25,11 @@ public class Bullet : MonoBehaviour
                 enemyHealth.TakeDamage(damage);
                 Destroy(gameObject);
 
+            }
+            if(cyclopsHealth!=null)
+            {
+                cyclopsHealth.TakeDamage(damage);
+                Destroy(gameObject);
             }
         }
     }
