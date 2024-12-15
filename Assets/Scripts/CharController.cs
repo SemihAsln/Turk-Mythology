@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 10; //for arrow 
 
 
+
     Animator animator;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
