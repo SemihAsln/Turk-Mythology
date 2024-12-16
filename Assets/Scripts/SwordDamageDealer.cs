@@ -44,12 +44,18 @@ public class SwordDamageDealer : MonoBehaviour
             Debug.Log("Düþmana isabet etti.");
             // Enemy'deki Health script'ini al
             EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
+            CyclopsHealth cyclopsHealth = other.GetComponent<CyclopsHealth>();
             if (enemyHealth != null)
             {
                 // Hasar ver
                 Debug.Log("Düþmana hasar verdi.");
                 enemyHealth.TakeDamage(damage);
              
+            }
+            if (cyclopsHealth != null)
+            {
+                cyclopsHealth.TakeDamage(damage);
+              
             }
         }
     }

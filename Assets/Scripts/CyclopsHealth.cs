@@ -1,25 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyHealth : MonoBehaviour
+public class CyclopsHealth : MonoBehaviour
 {
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
-
+    [SerializeField] Animator animator;
+    
 
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
     {
-
+        animator.SetBool("GetHit", true);
         Debug.Log("Düþman " + damage + " hasar yedi.");
-        currentHealth -= damage;
 
+        currentHealth -= damage;
+        
         if (currentHealth <= 0)
         {
             Die();
@@ -39,23 +42,25 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
 
-        EnemyAI enemyAI = GetComponentInParent<EnemyAI>();
+        CyclopsAI cyclopsAI = GetComponentInParent<CyclopsAI>();
 
 
-        if (enemyAI == null)
+        if (cyclopsAI == null)
         {
             Debug.Log("EnemyAI'a ulaþýlamýyor" + gameObject.name);
         }
 
-        if (enemyAI != null)
+        if (cyclopsAI != null)
         {
-            enemyAI.OnDeath(); // EnemyAI'ye ölümü bildir
+            
+            cyclopsAI.OnDeath(); // EnemyAI'ye ölümü bildir
         }
 
         if (transform.parent != null)
         {
+            
             Debug.Log("Parent objesi yok ediliyor: " + transform.parent.name);
-            Destroy(transform.parent.gameObject, 3f); // Parent objeyi yok et
+            Destroy(transform.parent.gameObject, 4f); // Parent objeyi yok et
         }
         else
         {
