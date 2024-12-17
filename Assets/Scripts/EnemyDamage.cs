@@ -13,6 +13,10 @@ public class EnemyDamage : MonoBehaviour
             {
                 playerHealth.TakeDamage(damageAmount); // Hasar uygula
             }
+            if(this.CompareTag("EnemyProjectile")==true)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

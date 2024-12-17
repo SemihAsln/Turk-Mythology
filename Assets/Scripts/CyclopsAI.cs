@@ -90,6 +90,7 @@ public class CyclopsAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+
         agent.SetDestination(player.position);
         animator.SetBool("IsWalking", true);
        
