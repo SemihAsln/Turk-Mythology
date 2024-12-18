@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public abstract class EnemyAI : MonoBehaviour
 {
     public Transform player; // Oyuncunun Transform bileþeni
-    private NavMeshAgent agent; // NavMeshAgent bileþeni
+    protected NavMeshAgent agent; // NavMeshAgent bileþeni
+
+    public Animator animator;
 
     public LayerMask whatIsGround,whatIsPlayer;
 
@@ -15,17 +17,21 @@ public class EnemyAI : MonoBehaviour
 
     //Attacking 
     public float timeBetweenAttacks;
-    bool AlreadyAttacked;
+    protected bool AlreadyAttacked;
 
     //States 
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+
+
+    public abstract void AttackPlayer();
 
     void Start()
     {
         // Oyuncuyu etiketine göre bul
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent bileþenini al
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,6 +51,7 @@ public class EnemyAI : MonoBehaviour
 
         if(playerInAttackRange && playerInSightRange)
         {
+           
             AttackPlayer();
         }
     }
@@ -58,6 +65,7 @@ public class EnemyAI : MonoBehaviour
         if(walkPointSet)
         {
             agent.SetDestination(walkPoint);
+            animator.SetBool("IsWalking", true);
         }
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
@@ -85,33 +93,27 @@ public class EnemyAI : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        animator.SetBool("IsWalking", true);
+        animator.SetBool("IsAttacking", false);
     }
 
-    private void AttackPlayer()
+   
+
+    protected void ResetAttack()
     {
-        agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
-
-        if(!AlreadyAttacked)
-        {
-
-            //THE ATTACKING CODE SHOULD BE HERE 
-            Debug.Log("Düþman Saldýrýyor");
-
-            AlreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
-    }
-
-    private void ResetAttack()
-    {
+        animator.SetBool("IsAttacking", false);
+       
         AlreadyAttacked = false;
     }
     public void OnDeath()
     {
         // Düþman öldüðünde hareketi durdur
         Debug.Log("OnDeath Metodu çalýþtý");
+
+        animator.SetBool("IsDead", true);
+        animator.SetBool("IsWalking", false);
+        animator.SetBool("IsAttacking", false);
+
         agent.isStopped = true;
     }
 }

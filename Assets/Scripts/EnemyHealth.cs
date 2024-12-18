@@ -6,17 +6,18 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
-
+    [SerializeField] Animator animator;
 
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
     {
-
+        animator.SetBool("GetHit", true);
         Debug.Log("Düþman " + damage + " hasar yedi.");
         currentHealth -= damage;
 
