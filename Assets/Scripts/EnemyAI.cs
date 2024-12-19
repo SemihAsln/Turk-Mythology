@@ -23,6 +23,7 @@ public abstract class EnemyAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+  
 
     public abstract void AttackPlayer();
 
@@ -32,6 +33,7 @@ public abstract class EnemyAI : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent bileþenini al
         animator = GetComponent<Animator>();
+       
     }
 
     void Update()

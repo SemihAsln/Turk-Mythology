@@ -7,8 +7,8 @@ public class ToggleSpecificChildren : MonoBehaviour
     [SerializeField] private GameObject bow; // Ýlk obje
     [SerializeField] private GameObject sword; // Ýkinci obje
    
-    private bool toggleState = true; // Baþlangýç durumu
-
+    public bool toggleState = true; // Baþlangýç durumu
+    public bool bowIsEnabled = false;
 
     private void Start()
     {
@@ -29,14 +29,21 @@ public class ToggleSpecificChildren : MonoBehaviour
         if (bow != null)
         {
             bow.SetActive(toggleState);
+            Debug.Log("WepSwitch " + bowIsEnabled);
+
+
         }
 
         // Ýkinci objeyi pasif/aktif yap
         if (sword != null)
         {
             sword.SetActive(!toggleState);
+            Debug.Log("WepSwitch " + bowIsEnabled);
+
+
+
         }
-       // StartCoroutine(Waitin());
+        // StartCoroutine(Waitin());
         toggleState = !toggleState;
         // Toggle durumunu ters çevir
 

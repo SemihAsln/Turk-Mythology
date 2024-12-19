@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
+    public bool isInCoolDown;
     [SerializeField] Animator animator;
+
 
     void Start()
     {
+        isInCoolDown = false;
         currentHealth = maxHealth;
         UpdateHealthBar();
         animator = GetComponent<Animator>();
@@ -17,9 +21,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        EnemyAI enemyAI = GetComponentInParent<EnemyAI>();
-        
         animator.SetBool("GetHit", true);
+     
         Debug.Log("Düþman " + damage + " hasar yedi.");
         currentHealth -= damage;
 
@@ -39,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+ 
     private void Die()
     {
 
