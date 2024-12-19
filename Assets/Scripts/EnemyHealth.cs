@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        EnemyAI enemyAI = GetComponentInParent<EnemyAI>();
+        
         animator.SetBool("GetHit", true);
         Debug.Log("Düþman " + damage + " hasar yedi.");
         currentHealth -= damage;

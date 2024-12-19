@@ -4,13 +4,14 @@ public class LookAtMousePoint : MonoBehaviour
 {
     public Camera mainCamera; // Ana kamera referansý
     public LayerMask groundLayer; // Týklanabilir zemin katmaný
-    public GameObject bow; 
+    public GameObject bow;
+    public GameObject sword;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) // Sol mouse týklamasý
         {
-            if (bow != null)
+            if (bow != null && sword == null)
             {
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 

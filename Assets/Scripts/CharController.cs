@@ -5,10 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Transform arrowspawnpoint;
+    public Transform swordHitPoint;
     public GameObject arrowPrefab;
+    public GameObject slashEffect;
     public float bulletSpeed = 10; //for arrow 
 
 
+    private int comboStep = 0;
+    private float comboTimer = 0f;
+    public float comboResetTime = 1f; // combo counter variables
 
     Animator animator;
     [SerializeField] private Rigidbody _rb;
@@ -54,6 +59,20 @@ public class PlayerController : MonoBehaviour
             Attack();
         }
 
+        if (comboStep > 0)
+        {
+            comboTimer += Time.deltaTime;
+            if (comboTimer > comboResetTime)
+            {
+                ResetCombo();
+            }
+        }
+
+        if (Input.anyKeyDown && !Input.GetMouseButtonDown(0))
+        {
+            ResetCombo();
+        }
+
         // Dash
         if (Input.GetMouseButtonDown(1) && _canDash)
         {
@@ -92,6 +111,7 @@ private IEnumerator Dash()
 {
     _isDashing = true;
     _canDash = false;
+
 
     Vector3 dashDirection = transform.forward;
     float dashEndTime = Time.time + _dashDuration;
@@ -147,6 +167,7 @@ private IEnumerator Dash()
         if (sword.activeSelf)
         {
             animator.SetBool("IsAttackingSword", true);
+            SwordAttack();
         }
 
         StartCoroutine(ResetAttack());
@@ -154,7 +175,7 @@ private IEnumerator Dash()
 
     private IEnumerator ResetAttack()
     {
-        yield return new WaitForSeconds(0.5f); // Saldýrý animasyonunun süresi kadar bekle
+        yield return new WaitForSeconds(0.8f); // Saldýrý animasyonunun süresi kadar bekle
         animator.SetBool("IsAttackingBow", false);
         animator.SetBool("IsAttackingSword", false);
         _isAttacking = false;
@@ -167,7 +188,82 @@ private IEnumerator Dash()
         Destroy(arrow, 4f);
     }
 
+    private void SwordAttack()
+    {
+        comboStep = (comboStep % 4) + 1;
+        
+        comboTimer = 0f; // Zamanlayýcýyý sýfýrla
 
+        if (comboStep == 1)
+        {
+            Debug.Log("1 kere vurdu.");
+            
+            animator.SetBool("IsAttackingSword",true);
+            animator.SetBool("Combo1", false);
+            animator.SetBool("Combo2", false);
+            animator.SetBool("Combo3", false);
+        }
+        else if (comboStep == 2)
+        {
+            Debug.Log("2 kere vurdu.");
+            animator.SetBool("Combo1",true);
+            animator.SetBool("IsAttackingSword", false);
+            animator.SetBool("Combo2", false);
+            animator.SetBool("Combo3", false);
+        }
+        else if (comboStep == 3)
+        {
+            Debug.Log("3 kere vurdu.");
+            animator.SetBool("IsAttackingSword", false);
+            animator.SetBool("Combo1", false);
+            animator.SetBool("Combo3", false);
+            animator.SetBool("Combo2",true);
+        }
+        else if (comboStep == 4)
+        {
+
+           
+            
+            Debug.Log("4 kere vurdu.");
+            animator.SetBool("IsAttackingSword", false);
+            animator.SetBool("Combo1", false);
+            animator.SetBool("Combo2", false);
+            animator.SetBool("Combo3",true);
+
+           
+        }
+        else if(comboStep >= 4)
+        {
+            ResetCombo(); // Son saldýrýdan sonra sýfýrla
+
+        }
+
+
+    }
+
+    public void HitTheGround() 
+    
+    {
+        var slash = Instantiate(slashEffect, swordHitPoint.position, swordHitPoint.rotation);
+        slash.GetComponent<Rigidbody>().velocity = swordHitPoint.forward * 1f;
+        Destroy(slash, 1f);
+
+    }
+    void ResetCombo()
+    {
+        comboStep = 0;
+        comboTimer = 0f;
+        ResetAllComboBools();
+    }
+
+    void ResetAllComboBools()
+    {
+        animator.SetBool("IsAttackingSword", false);
+        animator.SetBool("Combo1", false);
+        animator.SetBool("Combo2", false);
+        animator.SetBool("Combo3", false);
+
+    }
 }
 
 public static class Helpers

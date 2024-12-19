@@ -25,9 +25,7 @@ public class ShamanAttacks : EnemyAI
                 animator.SetBool("IsAttacking", true);
 
                 
-                var magicsphere = Instantiate(arrowPrefab, arrowspawnpoint.position, arrowspawnpoint.rotation);
-                magicsphere.GetComponent<Rigidbody>().velocity = arrowspawnpoint.forward * bulletSpeed;
-                Destroy(magicsphere, 4f);
+                
 
                 AlreadyAttacked = true;
                 Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -36,4 +34,11 @@ public class ShamanAttacks : EnemyAI
 
     }
     
+    public void ThrowMagicBall() 
+    {
+        var magicsphere = Instantiate(arrowPrefab, arrowspawnpoint.position, arrowspawnpoint.rotation);
+        magicsphere.GetComponent<Rigidbody>().velocity = arrowspawnpoint.forward * bulletSpeed;
+        Destroy(magicsphere, 4f);
+    }
+
 }

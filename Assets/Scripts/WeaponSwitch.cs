@@ -6,7 +6,7 @@ public class ToggleSpecificChildren : MonoBehaviour
 {
     [SerializeField] private GameObject bow; // Ýlk obje
     [SerializeField] private GameObject sword; // Ýkinci obje
-
+   
     private bool toggleState = true; // Baþlangýç durumu
 
 
