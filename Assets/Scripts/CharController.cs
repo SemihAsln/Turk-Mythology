@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VFX;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform swordHitPoint;
     public GameObject arrowPrefab;
     public GameObject slashEffect;
-    public VisualEffect swordSlash;
+    public GameObject swordSlash;
     public float bulletSpeed = 10; //for arrow 
 
 
@@ -35,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        swordSlash = GetComponent<VisualEffect>();
+        
     }
 
     private void Update()
@@ -255,7 +254,7 @@ private IEnumerator Dash()
 
     public void SlashEffect()
     {
-        swordSlash.Play();
+       
       
     }
     void ResetCombo()
