@@ -11,7 +11,7 @@ public class LookAtMousePoint : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // Sol mouse týklamasý
         {
-            if (bow != null && sword == null)
+            if (bow != null )
             {
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
