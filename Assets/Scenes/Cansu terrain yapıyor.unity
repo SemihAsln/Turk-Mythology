@@ -1326,6 +1326,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4957605393579145644, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1856426919}
+    - targetCorrespondingSourceObject: {fileID: 4957605393579145644, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856426925}
   m_SourcePrefab: {fileID: 100100000, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
 --- !u!1001 &362829082
 PrefabInstance:
@@ -1647,7 +1650,7 @@ GameObject:
   - component: {fileID: 493106766}
   - component: {fileID: 493106765}
   - component: {fileID: 493106764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2674,7 +2677,7 @@ Transform:
   m_GameObject: {fileID: 1352321175}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.6, y: 61.253, z: 73.8}
+  m_LocalPosition: {x: 63.06, y: 71.48, z: 82.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3087,8 +3090,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 442.15, y: 272.15}
-  m_SizeDelta: {x: 1226.5342, y: 644.3022}
+  m_AnchoredPosition: {x: 455.6907, y: 272.30316}
+  m_SizeDelta: {x: 1253.6157, y: 644.6085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1668420752
 GameObject:
@@ -3865,6 +3868,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674d8c037b04e7b4e83472156dacaae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1856426925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856426913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e5649719629d3438ae045a47ba3b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 817961321}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  bow: {fileID: 1494276843}
+  sword: {fileID: 163145645}
 --- !u!1 &1916456117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,19 +4016,24 @@ MonoBehaviour:
   textComponent: {fileID: 2007320157}
   characterImage: {fileID: 1658796494}
   audioSource: {fileID: 1916456118}
+  textBoxRectTransform: {fileID: 1764968721}
   lines:
   - lineText: "klini\u011Fe ho\u015F geldin amk "
     characterSprite: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
     voiceClip: {fileID: 8300000, guid: 1870a7738da35ad41a95e47c2cf940ca, type: 3}
+    isTextBoxOnRight: 1
   - lineText: "umar\u0131m kod \xE7al\u0131\u015F\u0131odur"
     characterSprite: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
     voiceClip: {fileID: 8300000, guid: 3836acebcff4e5e4cac2d74142d16260, type: 3}
+    isTextBoxOnRight: 0
   - lineText: "umar\u0131m"
     characterSprite: {fileID: 21300000, guid: 1cbcb8fcac3673946b71e59b5bf322cb, type: 3}
     voiceClip: {fileID: 8300000, guid: 4fa95269255df724f9efc00e3fb869fe, type: 3}
+    isTextBoxOnRight: 0
   - lineText: cidden
     characterSprite: {fileID: 21300000, guid: f2802e3067e4cd5479c3f3c9f6ab33c3, type: 3}
     voiceClip: {fileID: 8300000, guid: 19cc0c6dadecd1245a390882d012574b, type: 3}
+    isTextBoxOnRight: 0
   textSpeed: 0.05
   lineDelay: 5
   dialogueBox: {fileID: 1764968720}
@@ -4197,7 +4223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 239, y: 2.3224}
+  m_AnchoredPosition: {x: 42, y: 2.3224}
   m_SizeDelta: {x: 525.1496, y: 176.6971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007320157
