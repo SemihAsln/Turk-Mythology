@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
     Vector3 GetRandomNavMeshPosition()
     {
         Vector3 randomPosition = transform.position + Random.insideUnitSphere * 5f; // 5 birimlik bir alan
-        randomPosition.y = 70; // Y eksenini sabit 60 olarak ayarla
+        randomPosition.y = 70; // Y eksenini sabit 70 olarak ayarla
 
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPosition, out hit, 5f, NavMesh.AllAreas))

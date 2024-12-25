@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Cansu terrain yap\u0131yor.unity"
+    guid: fd482c8730f23844d92439d1f4c68ec6
+  - enabled: 1
+    path: Assets/Scenes/SemihTerrain.unity
+    guid: a19a658af98867e4da45b65016671c3c
   m_configObjects: {}
