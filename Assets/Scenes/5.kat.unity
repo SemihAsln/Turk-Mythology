@@ -4172,19 +4172,19 @@ MonoBehaviour:
   - lineText: "klini\u011Fe ho\u015F geldin amk "
     characterSprite: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
     voiceClip: {fileID: 8300000, guid: 1870a7738da35ad41a95e47c2cf940ca, type: 3}
-    isTextBoxOnRight: 1
+    textBoxPosition: 5
   - lineText: "umar\u0131m kod \xE7al\u0131\u015F\u0131odur"
     characterSprite: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
     voiceClip: {fileID: 8300000, guid: 3836acebcff4e5e4cac2d74142d16260, type: 3}
-    isTextBoxOnRight: 0
+    textBoxPosition: 2
   - lineText: "umar\u0131m"
     characterSprite: {fileID: 21300000, guid: 1cbcb8fcac3673946b71e59b5bf322cb, type: 3}
     voiceClip: {fileID: 8300000, guid: 4fa95269255df724f9efc00e3fb869fe, type: 3}
-    isTextBoxOnRight: 0
+    textBoxPosition: 1
   - lineText: cidden
     characterSprite: {fileID: 21300000, guid: f2802e3067e4cd5479c3f3c9f6ab33c3, type: 3}
     voiceClip: {fileID: 8300000, guid: 19cc0c6dadecd1245a390882d012574b, type: 3}
-    isTextBoxOnRight: 0
+    textBoxPosition: 1
   textSpeed: 0.05
   lineDelay: 5
   dialogueBox: {fileID: 1764968720}
