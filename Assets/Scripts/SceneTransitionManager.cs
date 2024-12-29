@@ -17,14 +17,14 @@ public class SceneTransitionManager : MonoBehaviour
 
         // Build Settings'teki sahne isimlerini al
         int sceneCount = SceneManager.sceneCountInBuildSettings;
-        sceneNames = new List<string>();
-
-        for (int i = 0; i < sceneCount; i++)
+        sceneNames = new List<string> 
         {
-            string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
-            string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
-            sceneNames.Add(sceneName);
-        }
+            "3.Kat","5.Kat","7.Kat","9.Kat","11.Kat","15.Kat"
+        
+        
+        };
+
+       
 
         if (sceneNames.Count == 0)
         {

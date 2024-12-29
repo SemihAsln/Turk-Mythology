@@ -852,7 +852,7 @@ Transform:
   m_GameObject: {fileID: 1083388024725903869}
   serializedVersion: 2
   m_LocalRotation: {x: -0.013629611, y: -0.0036831484, z: -0.028873283, w: 0.99948335}
-  m_LocalPosition: {x: -0.08978832, y: 1.26356, z: 1.0269401}
+  m_LocalPosition: {x: -0.11, y: 0.95, z: 1.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3269,8 +3269,10 @@ GameObject:
   - component: {fileID: 513492045395041605}
   - component: {fileID: 7403080439123038697}
   - component: {fileID: 3199003252291648766}
+  - component: {fileID: 7289710875149933950}
   - component: {fileID: 5091677727150262735}
   - component: {fileID: 8704107641007292003}
+  - component: {fileID: 6564682982311434335}
   - component: {fileID: 8181389316150058227}
   - component: {fileID: 6285042115683789731}
   m_Layer: 6
@@ -3289,7 +3291,7 @@ Transform:
   m_GameObject: {fileID: 5659630888296381306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.980915, y: 70.057755, z: 45.754307}
+  m_LocalPosition: {x: 51.26, y: 70.05, z: 60.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3348,6 +3350,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &7289710875149933950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659630888296381306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e3b8d9d7e7bba42861e33fb4161f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  playerHealth: {fileID: 0}
 --- !u!114 &5091677727150262735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3361,12 +3377,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowspawnpoint: {fileID: 1134760279383684753}
+  swordHitPoint: {fileID: 0}
   arrowPrefab: {fileID: 0}
+  slashEffect: {fileID: 0}
+  swordSlash: {fileID: 0}
   bulletSpeed: 40
+  comboResetTime: 1
   _rb: {fileID: 3199003252291648766}
   _speed: 8
   _turnSpeed: 1080
-  _dashSpeed: 30
+  _dashSpeed: 60
   _dashDuration: 0.2
   _dashCooldown: 0.3
   bow: {fileID: 3445094828760673000}
@@ -3395,6 +3415,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6564682982311434335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659630888296381306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674d8c037b04e7b4e83472156dacaae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8181389316150058227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3409,6 +3441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bow: {fileID: 3445094828760673000}
   sword: {fileID: 6433474369175096363}
+  toggleState: 1
+  bowIsEnabled: 0
 --- !u!114 &6285042115683789731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,6 +3460,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   bow: {fileID: 3445094828760673000}
+  sword: {fileID: 6433474369175096363}
 --- !u!1 &5743793274400794673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,7 +4311,7 @@ Transform:
   m_GameObject: {fileID: 6762663752358036291}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.036, y: 1.251, z: 0}
+  m_LocalPosition: {x: 0.036, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4296,6 +4331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayDistance: 5
   interactKey: 101
+  dialogueBox: {fileID: 0}
+  backgroundPanel: {fileID: 0}
 --- !u!1 &6813662264684479063
 GameObject:
   m_ObjectHideFlags: 0
@@ -5899,8 +5936,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.03278871, y: 0.13532008, z: 0.0058907336}
-  m_Center: {x: 0.00068240234, y: -0.086561725, z: -0.00025512555}
+  m_Size: {x: 0.06372773, y: 0.15405525, z: 0.0058907336}
+  m_Center: {x: 0.002365157, y: -0.09592862, z: -0.00025529257}
 --- !u!114 &1066583844380394555
 MonoBehaviour:
   m_ObjectHideFlags: 0

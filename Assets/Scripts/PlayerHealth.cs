@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100; // Maksimum can
     private int currentHealth; // Mevcut can
     public Image playerHealth;
+    Animator animator;
 
     private Renderer[] renderers;
     private List<Material> allMaterials = new List<Material>();
@@ -15,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth; // Oyuncu baþlangýçta tam canla baþlar
         UpdateHealthBar();
 
@@ -99,6 +101,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        animator.SetBool("IsDead", true);
+        animator.SetBool("IsWalking", false);
+        animator.SetBool("IsDashing", false);
+        animator.SetBool("IsAttackingBow", false);
+        animator.SetBool("IsAttackingSword", false);
+        animator.SetBool("Combo1", false);
+        animator.SetBool("Combo2", false);
+        animator.SetBool("Combo3", false);
         Debug.Log("Player is dead!");
     }
 }
