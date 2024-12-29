@@ -11,12 +11,14 @@ public class DialogueSystem : MonoBehaviour
     public struct DialogueLine
     {
         public string lineText; // Replik metni
+        public string characterName; // Konuþan karakterin adý
         public Sprite characterSprite; // Karakterin görseli
         public AudioClip voiceClip; // Repliðe ait ses dosyasý
-        public TextBoxPosition textBoxPosition; // Metin kutusunun saðda mý solda mý olduðunu belirler
+        public TextBoxPosition textBoxPosition; // Metin kutusunun konumunu belirler
     }
 
     public TextMeshProUGUI textComponent; // Replik metnini göstermek için kullanýlan TMP bileþeni
+    public TextMeshProUGUI nameComponent; // Karakter adýný göstermek için kullanýlan TMP bileþeni
     public Image characterImage; // Karakter görselini göstermek için kullanýlan Image bileþeni
     public AudioSource audioSource; // Ses dosyalarýný çalmak için kullanýlan AudioSource
 
@@ -54,6 +56,7 @@ public class DialogueSystem : MonoBehaviour
 
         // Diyalog baþlatýlýr
         textComponent.text = string.Empty;
+        nameComponent.text = string.Empty;
         StartDialogue();
     }
 
@@ -77,8 +80,9 @@ public class DialogueSystem : MonoBehaviour
     {
         isTyping = true; // Yazma iþlemi baþladý
 
-        // Replik metni, görseli ve metin kutusu konumu ayarlanýr
+        // Replik metni, karakter adý, görseli ve metin kutusu konumu ayarlanýr
         textComponent.text = string.Empty;
+        nameComponent.text = lines[index].characterName;
         characterImage.sprite = lines[index].characterSprite;
         SetTextBoxPosition(lines[index].textBoxPosition);
 
@@ -118,6 +122,7 @@ public class DialogueSystem : MonoBehaviour
         {
             // Diyalog bittiðinde canvas kapatýlýr
             textComponent.text = string.Empty;
+            nameComponent.text = string.Empty;
             characterImage.sprite = null;
             Debug.Log("Diyalog sona erdi.");
 
@@ -131,37 +136,38 @@ public class DialogueSystem : MonoBehaviour
 
     void SetTextBoxPosition(TextBoxPosition position)
     {
+       
         switch (position)
         {
             case TextBoxPosition.BottomFarLeft:
                 textBoxRectTransform.anchorMin = new Vector2(0f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.2f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.1f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.2f, 0.5f);
                 break;
             case TextBoxPosition.BottomLeft:
                 textBoxRectTransform.anchorMin = new Vector2(0.2f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.4f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.2f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.35f, 0.5f);
                 break;
             case TextBoxPosition.BottomSlightLeft:
                 textBoxRectTransform.anchorMin = new Vector2(0.4f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.5f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.3f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.45f, 0.5f);
                 break;
             case TextBoxPosition.BottomCenterLeft:
                 textBoxRectTransform.anchorMin = new Vector2(0.5f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.6f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.4f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.55f, 0.5f);
                 break;
             case TextBoxPosition.BottomCenterRight:
                 textBoxRectTransform.anchorMin = new Vector2(0.6f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.7f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.5f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.6f, 0.5f);
                 break;
             case TextBoxPosition.BottomSlightRight:
                 textBoxRectTransform.anchorMin = new Vector2(0.7f, 0f);
                 textBoxRectTransform.anchorMax = new Vector2(0.8f, 0.2f);
-                textBoxRectTransform.pivot = new Vector2(0.6f, 0.5f);
+                textBoxRectTransform.pivot = new Vector2(0.65f, 0.5f);
                 break;
             case TextBoxPosition.BottomRight:
                 textBoxRectTransform.anchorMin = new Vector2(0.8f, 0f);
@@ -175,5 +181,4 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
     }
-
 }
