@@ -13,6 +13,9 @@ public class PlayerHealth : MonoBehaviour
     private List<Material> allMaterials = new List<Material>();
     private Color[] originalColors;
 
+    public DeathMenu deathMenu;
+
+
     private void Start()
     {
         currentHealth = maxHealth; // Oyuncu baþlangýçta tam canla baþlar
@@ -100,5 +103,6 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player is dead!");
+        deathMenu.OnPlayerDeath();
     }
 }
