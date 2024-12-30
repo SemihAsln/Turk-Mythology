@@ -3656,6 +3656,14 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 817961321}
+    - target: {fileID: 7289710875149933950, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 565144256}
+    - target: {fileID: 7289710875149933950, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 347346347}
     - target: {fileID: 8181389316150058227, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
       propertyPath: bowSprite
       value: 

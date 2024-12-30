@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/3.kat.unity
+    guid: bb6eb681128385842a6b69f44e653dcd
+  - enabled: 1
     path: Assets/Scenes/5.kat.unity
     guid: fd482c8730f23844d92439d1f4c68ec6
   - enabled: 1
     path: Assets/Scenes/7.kat.unity
     guid: a19a658af98867e4da45b65016671c3c
+  - enabled: 1
+    path: Assets/Scenes/9.Kat.unity
+    guid: 6127db366e450e54681c098e2dd604fb
+  - enabled: 1
+    path: Assets/Scenes/11.Kat.unity
+    guid: ce325bc8bc2543d4bb85951a9a539f0b
+  - enabled: 1
+    path: Assets/Scenes/15.kat.unity
+    guid: 5e00c86cea141bc468ac10d1a048deaf
   m_configObjects: {}
