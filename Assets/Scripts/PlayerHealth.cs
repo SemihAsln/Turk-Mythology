@@ -14,6 +14,9 @@ public class PlayerHealth : MonoBehaviour
     private List<Material> allMaterials = new List<Material>();
     private Color[] originalColors;
 
+    public DeathMenu deathMenu;
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -110,5 +113,6 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("Combo2", false);
         animator.SetBool("Combo3", false);
         Debug.Log("Player is dead!");
+        deathMenu.OnPlayerDeath();
     }
 }
