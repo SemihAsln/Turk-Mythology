@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     private float comboTimer = 0f;
     public float comboResetTime = 1f; // combo counter variables
 
+    [SerializeField] private AudioClip swordSound; // Kýlýç sesi için deðiþken
+    private AudioSource audioSource; // AudioSource referansý
+
+
     Animator animator;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
@@ -34,7 +38,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -241,6 +246,14 @@ private IEnumerator Dash()
         }
 
 
+    }
+
+    public void SwordSlashSound()
+    {
+        if (swordSound != null)
+        {
+            audioSource.PlayOneShot(swordSound);
+        }
     }
 
     public void HitTheGround() 

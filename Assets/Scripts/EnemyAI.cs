@@ -118,4 +118,5 @@ public abstract class EnemyAI : MonoBehaviour
 
         agent.isStopped = true;
     }
+
 }
