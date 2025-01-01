@@ -1083,6 +1083,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4957605393579145644, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1856426919}
+    - targetCorrespondingSourceObject: {fileID: 4957605393579145644, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856426923}
   m_SourcePrefab: {fileID: 100100000, guid: 4f46098734d87e24490aef9267915ad2, type: 3}
 --- !u!1001 &362829082
 PrefabInstance:
@@ -1830,6 +1833,152 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].lineText
+      value: "Ah, yaln\u0131z gezgin... Ad\u0131n\u0131 s\xF6ylemeye bile tenezz\xFCl
+        etmedi\u011Fin bu d\xFCnyada, neden h\xE2l\xE2 y\xFCr\xFCyorsun? Nereye varmay\u0131
+        umuyorsun, Ka\xE7gun?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].lineText
+      value: "Var olman\u0131n y\xFCk\xFC omuzlar\u0131m\u0131 ezmekte. Cevap ar\u0131yorum,
+        Erlik. Bu hayat, bu \xE7ile neden? G\xF6\u011F\xFCn katlar\u0131na t\u0131rmanacak,
+        Kayra Han\u2019a bu soruyu soraca\u011F\u0131m."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].lineText
+      value: "Kayra Han m\u0131? G\xF6\u011F\xFCn en y\xFCksek kat\u0131na m\u0131?
+        Ha! \u0130nsan, senin c\xFCr\u2019etinin s\u0131n\u0131rlar\u0131 beni bile
+        \u015Fa\u015F\u0131rt\u0131yor. Ama bil ki, her ad\u0131mda daha a\u011F\u0131r
+        bir y\xFCk ta\u015F\u0131yacaks\u0131n. Peki ya, yolunu g\xF6sterecek bir
+        rehber ister misin?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].lineText
+      value: "Rehber mi? Ne istiyorsun kar\u015F\u0131l\u0131\u011F\u0131nda, Erlik?
+        \xC7\xFCnk\xFC senin yard\u0131m\u0131n kar\u015F\u0131l\u0131ks\u0131z de\u011Fildir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].lineText
+      value: "Ak\u0131ll\u0131s\u0131n. Yaln\u0131zca bir antla\u015Fma yapaca\u011F\u0131z.G\xF6\u011Fe
+        ula\u015Ft\u0131\u011F\u0131nda her bir tanr\u0131n\u0131n kar\u015F\u0131s\u0131na
+        dikilecek ve onlar\u0131 sorgulayacaks\u0131n.E\u011Fer sonunda arad\u0131\u011F\u0131n
+        cevaplar\u0131 bulamazsan... O zaman ruhun ve bedenin bana ait olacak."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].lineText
+      value: "Ruhumun a\u011F\u0131rl\u0131\u011F\u0131 beni zapt edemez. Yolumu
+        g\xF6ster, Erlik.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].lineText
+      value: "\xD6yleyse git. Ama unutma, Ka\xE7gun... Her y\xFCkseli\u015F, daha
+        derin bir d\xFC\u015F\xFC\u015F\xFC beraberinde getirir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f86b2d429504284f8cc649e5c974dcc, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e058bcc498a7ca24ca7775fb4f2d3c94, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ca00ee5c09e51a41ae6edc099f32fff, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: debe47475bac3bd43a1a5a5cb4adc9c3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f6b75d7e0cda9640880bac35afa25cc, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterName
+      value: Erlik
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterName
+      value: Erlik
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterName
+      value: Erlik
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterName
+      value: Erlik
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ffa59ed9a65ae5468d98b77b69f332e, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5220953494423193518, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1893,6 +2042,14 @@ PrefabInstance:
     - target: {fileID: 7285479037122136564, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9074817205845598079, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2102,7 +2259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowspawnpoint: {fileID: 335567159}
   swordHitPoint: {fileID: 0}
-  arrowPrefab: {fileID: 0}
+  arrowPrefab: {fileID: 7080602381549017910, guid: 0a4e84eb1498d8041956b3efda8d53e9, type: 3}
   slashEffect: {fileID: 0}
   swordSlash: {fileID: 0}
   bulletSpeed: 40
@@ -2179,6 +2336,24 @@ MonoBehaviour:
   maxHealth: 100
   playerHealth: {fileID: 760968467}
   deathMenu: {fileID: 1023426332}
+--- !u!114 &1856426923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856426913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e5649719629d3438ae045a47ba3b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 817961321}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  bow: {fileID: 1494276843}
+  sword: {fileID: 163145645}
 --- !u!1 &2042893013
 GameObject:
   m_ObjectHideFlags: 0
