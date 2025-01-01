@@ -19,8 +19,8 @@ public class SceneTransitionManager : MonoBehaviour
         int sceneCount = SceneManager.sceneCountInBuildSettings;
         sceneNames = new List<string> 
         {
-            "3.kat","5.kat","7.kat","9.Kat","11.Kat","15.kat"
-        
+            "Baþlangýç", "3.kat","5.kat","7.kat","9.Kat","11.Kat","15.kat"
+
         
         };
 

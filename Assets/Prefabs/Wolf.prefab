@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d392e7bcd9a84349ba204dd6ac2eaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 513492045395041605, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
   animator: {fileID: 3831589548947563706}
   whatIsGround:
     serializedVersion: 2
