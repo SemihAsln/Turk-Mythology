@@ -9,10 +9,13 @@ public class EnemyHealth : MonoBehaviour
     public Image healthBar;
     public bool isInCoolDown;
     [SerializeField] Animator animator;
+    public AudioClip hitSound; // Vurma sesi
+    private AudioSource audioSource;
 
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         isInCoolDown = false;
         currentHealth = maxHealth;
         UpdateHealthBar();
@@ -68,6 +71,20 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.Log("Objesi yok ediliyor: " + gameObject.name);
             Destroy(gameObject, 3f); // Parent yoksa kendi objesini yok et
+        }
+    }
+
+
+    public void GetHitSound()
+    {
+        // Eðer ses atanmýþsa ve AudioSource varsa sesi çal
+        if (audioSource != null && hitSound != null)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
+        else
+        {
+            Debug.LogWarning("Vurma sesi atanmadý veya AudioSource bulunamadý!");
         }
     }
 }

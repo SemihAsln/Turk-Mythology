@@ -17,7 +17,6 @@ public class LookAtMousePoint : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(toggle.toggleState);
         if (Input.GetMouseButtonDown(0)) // Sol mouse týklamasý
         {
             if (toggle.toggleState==false)
