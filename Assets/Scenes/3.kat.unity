@@ -1642,7 +1642,6 @@ GameObject:
   - component: {fileID: 817961322}
   - component: {fileID: 817961321}
   - component: {fileID: 817961320}
-  - component: {fileID: 817961323}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -1724,63 +1723,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 515410191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &817961323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817961319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee76f5c3ca2d994abac24ddcc0ef49c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CloudsMask:
-    serializedVersion: 2
-    m_Bits: 512
-  LightMask:
-    serializedVersion: 2
-    m_Bits: 0
-  WorldBlockingMask:
-    serializedVersion: 2
-    m_Bits: 503
-  ResolutionDivider: 7
-  WorldDepthResolutionDivider: 3
-  DepthPrecision: 10
-  LateCut: 0
-  BlurRadius: 14.4
-  BlurQuality: 10
-  LateCutThreshohld: 0
-  LateCutPower: 1.26
-  UseDepthFiltering: 0
-  DepthFilteringPower: 0
-  UseNoise: 1
-  Noise: {fileID: 2800000, guid: ea4ad7e4f21a143478fefc813c9174ab, type: 3}
-  Wind: {x: 2, y: 1, z: 3}
-  NoiseScale: 1
-  DepthNoiseScale: 1
-  NormalNoisePower: 1
-  DepthNoisePower: 1.56
-  DisplacementNoisePower: 0.45
-  NoiseSinTimeScale: 0.2
-  DistanceToClouds: 10
-  Light: {fileID: 0}
-  UseRamp: 0
-  Ramp: {fileID: 0}
-  LightColor: {r: 1, g: 1, b: 1, a: 1}
-  ShadowColor: {r: 0.6, g: 0.72, b: 0.84, a: 1}
-  LightEnd: 0.75
-  HaloPower: 3
-  HaloDistance: 0.5
-  FallbackDistance: 1
-  blurFastShader: {fileID: 4800000, guid: 7ab901123de490e4bad21fdb835edd20, type: 3}
-  blurShader: {fileID: 4800000, guid: fd4453f270eb2734b886efe5223588ce, type: 3}
-  blurHQShader: {fileID: 4800000, guid: 22d75b161fbf2d14b9cd656fde6d05bd, type: 3}
-  depthBlurShader: {fileID: 4800000, guid: 86ffe5743a2c74741be2ae7d00c19d9b, type: 3}
-  depthShader: {fileID: 4800000, guid: 009f6c8cf8d3c144792d6321909e830c, type: 3}
-  cloudShader: {fileID: 4800000, guid: ddd68a53b8f487941ac09b4480974963, type: 3}
-  clearColorShader: {fileID: 4800000, guid: e8f3ce2cbe4971147b1b7f04b791e52a, type: 3}
 --- !u!114 &1023426332 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6183660267574462837, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
@@ -2465,14 +2407,91 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042893013}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2066815114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_Name
+      value: WaterPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6605194
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5122433
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 109.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 69.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.1586
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144622364408550, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 273952788}
   - {fileID: 1947618217}
-  - {fileID: 705507995}
   - {fileID: 515410191}
+  - {fileID: 705507995}
   - {fileID: 336216054}
   - {fileID: 573697}
   - {fileID: 482522659}
@@ -2481,3 +2500,4 @@ SceneRoots:
   - {fileID: 198756159}
   - {fileID: 407537953}
   - {fileID: 1501261860}
+  - {fileID: 2066815114}
