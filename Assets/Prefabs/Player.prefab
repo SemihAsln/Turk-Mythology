@@ -3364,6 +3364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   playerHealth: {fileID: 0}
+  deathMenu: {fileID: 6183660267574462837, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
 --- !u!114 &5091677727150262735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,7 +3379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowspawnpoint: {fileID: 1134760279383684753}
   swordHitPoint: {fileID: 0}
-  arrowPrefab: {fileID: 0}
+  arrowPrefab: {fileID: 7080602381549017910, guid: 0a4e84eb1498d8041956b3efda8d53e9, type: 3}
   slashEffect: {fileID: 0}
   swordSlash: {fileID: 0}
   bulletSpeed: 40
