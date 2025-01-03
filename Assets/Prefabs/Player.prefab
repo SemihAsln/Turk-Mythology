@@ -3398,7 +3398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   playerHealth: {fileID: 0}
-  deathMenu: {fileID: 6183660267574462837, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+  deathMenu: {fileID: 0}
 --- !u!114 &5091677727150262735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4465,6 +4465,7 @@ MonoBehaviour:
   interactKey: 101
   dialogueBox: {fileID: 0}
   backgroundPanel: {fileID: 0}
+  interactionText: {fileID: 0}
 --- !u!1 &6813662264684479063
 GameObject:
   m_ObjectHideFlags: 0

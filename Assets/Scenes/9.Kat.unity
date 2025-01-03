@@ -997,6 +997,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   isInCoolDown: 0
   animator: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!1001 &327017665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2982,6 +2983,7 @@ MonoBehaviour:
   healthBar: {fileID: 939302920}
   isInCoolDown: 0
   animator: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!195 &1569155858
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3648,6 +3650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5792065784322404464, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
+      propertyPath: interactionText
+      value: 
+      objectReference: {fileID: 3994396924796692725}
     - target: {fileID: 6285042115683789731, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}
       propertyPath: sword
       value: 
@@ -3889,6 +3895,17 @@ PrefabInstance:
       insertIndex: 2
       addedObject: {fileID: 565144256}
   m_SourcePrefab: {fileID: 100100000, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+--- !u!114 &3994396924796692725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 562180911146518138, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+  m_PrefabInstance: {fileID: 3994396924796692724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4957605393780065880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 513492045395041605, guid: 2e601544b33b5be41aa08ab906d2dde8, type: 3}

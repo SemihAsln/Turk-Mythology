@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -10,6 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     // Dialogue kutusunu referans al
     public GameObject dialogueBox;
     public GameObject backgroundPanel;
+    public TextMeshProUGUI interactionText;
+    private bool isDialogueActive = false;
 
     void Start()
     {
@@ -27,6 +30,11 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        if (isDialogueActive)
+        {
+            // Diyalog aktifken diðer iþlemleri yapma
+            return;
+        }
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
@@ -39,20 +47,33 @@ public class PlayerInteraction : MonoBehaviour
                 currentInteractable = hitObject;
 
                 Debug.Log("Etkileþim mümkün: " + hitObject.name);
+                // Interaction metnini güncelle
+                interactionText.gameObject.SetActive(true);
+                interactionText.text = "E - Konuþ";
+               
 
                 if (Input.GetKeyDown(interactKey))
                 {
+                    interactionText.gameObject.SetActive(false);
                     ShowDialogue();
                 }
+            }
+
+            else if (hitObject.CompareTag("Teleportation"))
+            {
+                interactionText.gameObject.SetActive(true);
+                interactionText.text = "E - Devam Et";
             }
             else
             {
                 currentInteractable = null;
+                interactionText.gameObject.SetActive(false);
             }
         }
         else
         {
             currentInteractable = null;
+            interactionText.gameObject.SetActive(false);
         }
     }
 
@@ -64,13 +85,25 @@ public class PlayerInteraction : MonoBehaviour
             dialogueBox.SetActive(true);
             backgroundPanel.SetActive(true);
 
+            // Interaction metnini gizle
+            if (interactionText != null)
+            {
+                interactionText.gameObject.SetActive(false);
+            }
+
             Dialogue dialogueComponent = dialogueBox.GetComponent<Dialogue>();
             if (dialogueComponent != null)
             {
                 dialogueComponent.StartDialogue();
             }
+
+            // Diyalog aktif olarak iþaretlenir
+            isDialogueActive = true;
         }
     }
+
+
+
 
     public void HideDialogue()
     {
@@ -79,6 +112,8 @@ public class PlayerInteraction : MonoBehaviour
             // Dialogue kutusunu ve arka plan maskesini gizle
             dialogueBox.SetActive(false);
             backgroundPanel.SetActive(false);
+
+            isDialogueActive = false;
         }
     }
 
