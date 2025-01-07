@@ -83,19 +83,23 @@ public class PlayerController : MonoBehaviour
             ResetCombo();
         }
 
+
+
+    }
+
+    private void FixedUpdate()
+    {
+
+        if (!_isDashing && !_isAttacking)
+        {
+            Move();
+        }
+
         // Dash
         if (Input.GetMouseButtonDown(1) && _canDash)
         {
             animator.SetBool("IsDashing", true);
             StartCoroutine(Dash());
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (!_isDashing && !_isAttacking)
-        {
-            Move();
         }
     }
 
