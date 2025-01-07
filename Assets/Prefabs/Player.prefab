@@ -3422,12 +3422,14 @@ MonoBehaviour:
   _rb: {fileID: 3199003252291648766}
   _speed: 8
   _turnSpeed: 1080
-  _dashSpeed: 32
+  _dashSpeed: 35
   _dashDuration: 0.2
   _dashCooldown: 0.3
   bow: {fileID: 3445094828760673000}
   sword: {fileID: 6433474369175096363}
   _isAttacking: 0
+  damagePopupPrefab: {fileID: 0}
+  damagePopupSpawnPoint: {fileID: 0}
 --- !u!136 &8704107641007292003
 CapsuleCollider:
   m_ObjectHideFlags: 0
