@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public GameObject FloatingTextPrefab;
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
@@ -32,13 +31,6 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth -= damage;
 
-        ShowPopupText();
-
-        if (FloatingTextPrefab)
-        {
-            ShowPopupText();
-        }
-
         if (currentHealth <= 0)
         {
             Die();
@@ -47,10 +39,6 @@ public class EnemyHealth : MonoBehaviour
         UpdateHealthBar();
     }
 
-    void ShowPopupText()
-    {
-        Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
-    }
 
     void UpdateHealthBar()
     {
