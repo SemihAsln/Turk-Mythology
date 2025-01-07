@@ -3414,7 +3414,7 @@ MonoBehaviour:
   arrowspawnpoint: {fileID: 1134760279383684753}
   swordHitPoint: {fileID: 182950383788503364}
   arrowPrefab: {fileID: 7080602381549017910, guid: 0a4e84eb1498d8041956b3efda8d53e9, type: 3}
-  slashEffect: {fileID: 0}
+  slashEffect: {fileID: 687875028076424854, guid: ed134ef7cfb141544982326296676d72, type: 3}
   swordSlash: {fileID: 4644662394456174920}
   bulletSpeed: 30
   comboResetTime: 0.5

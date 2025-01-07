@@ -108,7 +108,7 @@ public class PhantomAI : MonoBehaviour
         {
 
             //THE ATTACKING CODE SHOULD BE HERE 
-            CyclopsAttack();
+            PhantomAttack();
             Debug.Log("Düþman Saldýrýyor");
 
             AlreadyAttacked = true;
@@ -118,7 +118,7 @@ public class PhantomAI : MonoBehaviour
 
     private void ResetAttack()
     {
-        animator.SetBool("Attack1", false);
+        animator.SetBool("IsAttacking", false);
        
         animator.SetBool("InIdle", true);
         
@@ -136,18 +136,8 @@ public class PhantomAI : MonoBehaviour
         agent.isStopped = true;
     }
 
-    private void CyclopsAttack()
+    private void PhantomAttack()
     {
-    
-        
-            animator.SetBool("IsAttacking", true);
-          
-        
-     
-
+            animator.SetBool("IsAttacking", true); 
     }
-
-
-
-
 }

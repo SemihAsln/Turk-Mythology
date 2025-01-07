@@ -47,8 +47,10 @@ public class Pause : MonoBehaviour
 
     public void LoadMenu()
     {
-
+        Time.timeScale = 1f; // Zamaný normale döndür
+        SceneManager.LoadScene("MainMenu"); // Ana menü sahnesini yükle
     }
+
 
     public void QuitGame()
     {

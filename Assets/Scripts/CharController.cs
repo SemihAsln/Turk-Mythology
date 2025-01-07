@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -35,12 +36,35 @@ public class PlayerController : MonoBehaviour
     private bool _canDash = true;
     public bool _isAttacking = false;
 
+    [SerializeField] private GameObject damagePopupPrefab; // Damage Popup Prefab
+    [SerializeField] private Transform damagePopupSpawnPoint; // Popup'un doðacaðý yer
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
 
     }
+
+    private void ShowDamagePopup(int damage)
+    {
+        if (damagePopupPrefab == null || damagePopupSpawnPoint == null) return;
+
+        // Damage popup oluþtur
+        GameObject popup = Instantiate(damagePopupPrefab, damagePopupSpawnPoint.position, Quaternion.identity);
+
+        // Text bileþenini güncelle
+        TextMeshPro popupText = popup.GetComponentInChildren<TextMeshPro>();
+        if (popupText != null)
+        {
+            popupText.text = damage.ToString();
+        }
+
+        // Belirli bir süre sonra yok et
+        Destroy(popup, 1.5f); // 1.5 saniye sonra yok olacak
+    }
+
 
     private void Update()
     {
@@ -200,6 +224,9 @@ private IEnumerator Dash()
         comboStep = (comboStep % 4) + 1;
         
         comboTimer = 0f; // Zamanlayýcýyý sýfýrla
+
+        int damage = Random.Range(10, 50); // Örnek olarak rastgele bir hasar
+        ShowDamagePopup(damage);
 
         if (comboStep == 1)
         {
