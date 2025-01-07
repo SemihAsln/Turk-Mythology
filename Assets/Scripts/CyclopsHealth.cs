@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class CyclopsHealth : MonoBehaviour
 {
+
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
@@ -22,7 +23,7 @@ public class CyclopsHealth : MonoBehaviour
         Debug.Log("Düþman " + damage + " hasar yedi.");
 
         currentHealth -= damage;
-        
+
         if (currentHealth <= 0)
         {
             Die();
@@ -30,6 +31,7 @@ public class CyclopsHealth : MonoBehaviour
 
         UpdateHealthBar();
     }
+
 
     void UpdateHealthBar()
     {

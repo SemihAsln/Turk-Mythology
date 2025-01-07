@@ -449,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7badc9c578cc34cbdadb980982f2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloatingTextPrefab: {fileID: 8380358482840548555, guid: e1c2ba99cfa79ad4c993b98c196f043e, type: 3}
   maxHealth: 150
   currentHealth: 0
   healthBar: {fileID: 6497408143305413991}

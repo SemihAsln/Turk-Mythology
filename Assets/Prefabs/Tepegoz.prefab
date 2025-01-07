@@ -838,11 +838,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3f4fade76ad3c4cb571e78c747c883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloatingTextPrefab: {fileID: 8380358482840548555, guid: e1c2ba99cfa79ad4c993b98c196f043e, type: 3}
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
   animator: {fileID: 85852631164384503}
-  hitSound: {fileID: 8300000, guid: 938972b4139bf044ea7dac2b8e7a2822, type: 3}
 --- !u!136 &2745309704643295632
 CapsuleCollider:
   m_ObjectHideFlags: 0

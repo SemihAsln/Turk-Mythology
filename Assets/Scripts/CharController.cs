@@ -36,8 +36,6 @@ public class PlayerController : MonoBehaviour
     private bool _canDash = true;
     public bool _isAttacking = false;
 
-    [SerializeField] private GameObject damagePopupPrefab; // Damage Popup Prefab
-    [SerializeField] private Transform damagePopupSpawnPoint; // Popup'un doðacaðý yer
 
 
     private void Start()
@@ -46,25 +44,6 @@ public class PlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
     }
-
-    private void ShowDamagePopup(int damage)
-    {
-        if (damagePopupPrefab == null || damagePopupSpawnPoint == null) return;
-
-        // Damage popup oluþtur
-        GameObject popup = Instantiate(damagePopupPrefab, damagePopupSpawnPoint.position, Quaternion.identity);
-
-        // Text bileþenini güncelle
-        TextMeshPro popupText = popup.GetComponentInChildren<TextMeshPro>();
-        if (popupText != null)
-        {
-            popupText.text = damage.ToString();
-        }
-
-        // Belirli bir süre sonra yok et
-        Destroy(popup, 1.5f); // 1.5 saniye sonra yok olacak
-    }
-
 
     private void Update()
     {
@@ -138,50 +117,50 @@ public class PlayerController : MonoBehaviour
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
     }
 
-private IEnumerator Dash()
-{
-    _isDashing = true;
-    _canDash = false;
-
-
-    Vector3 dashDirection = transform.forward;
-    float dashEndTime = Time.time + _dashDuration;
-
-    // Collider'ý devre dýþý býrak
-    Collider playerCollider = GetComponent<Collider>();
-    if (playerCollider != null)
+    private IEnumerator Dash()
     {
-        playerCollider.enabled = false;
-    }
+        _isDashing = true;
+        _canDash = false;
 
-    while (Time.time < dashEndTime)
-    {
-        _rb.MovePosition(transform.position + dashDirection * _dashSpeed * Time.deltaTime);
-        yield return null;
-    }
 
-    _isDashing = false;
-    animator.SetBool("IsDashing", false);
+        Vector3 dashDirection = transform.forward;
+        float dashEndTime = Time.time + _dashDuration;
 
-    // Dash sonrasý animasyon durumunu kontrol et
-    if (_input.magnitude > 0) // Eðer hareket varsa
-    {
-        animator.SetBool("IsWalking", true);
-    }
-    else // Hareket yoksa
-    {
-        animator.SetBool("IsWalking", false);
-    }
+        // Collider'ý devre dýþý býrak
+        Collider playerCollider = GetComponent<Collider>();
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = false;
+        }
 
-    // Collider'ý tekrar etkinleþtir
-    if (playerCollider != null)
-    {
-        playerCollider.enabled = true;
-    }
+        while (Time.time < dashEndTime)
+        {
+            _rb.MovePosition(transform.position + dashDirection * _dashSpeed * Time.deltaTime);
+            yield return null;
+        }
 
-    yield return new WaitForSeconds(_dashCooldown);
-    _canDash = true;
-}
+        _isDashing = false;
+        animator.SetBool("IsDashing", false);
+
+        // Dash sonrasý animasyon durumunu kontrol et
+        if (_input.magnitude > 0) // Eðer hareket varsa
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else // Hareket yoksa
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
+        // Collider'ý tekrar etkinleþtir
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = true;
+        }
+
+        yield return new WaitForSeconds(_dashCooldown);
+        _canDash = true;
+    }
 
 
     private void Attack()
@@ -225,8 +204,6 @@ private IEnumerator Dash()
         
         comboTimer = 0f; // Zamanlayýcýyý sýfýrla
 
-        int damage = Random.Range(10, 50); // Örnek olarak rastgele bir hasar
-        ShowDamagePopup(damage);
 
         if (comboStep == 1)
         {

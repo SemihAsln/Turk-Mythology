@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public GameObject FloatingTextPrefab;
     public int maxHealth = 100; // Can miktarý
     public int currentHealth;
     public Image healthBar;
@@ -27,7 +28,16 @@ public class EnemyHealth : MonoBehaviour
         animator.SetBool("GetHit", true);
      
         Debug.Log("Düþman " + damage + " hasar yedi.");
+
+
         currentHealth -= damage;
+
+        ShowPopupText();
+
+        if (FloatingTextPrefab)
+        {
+            ShowPopupText();
+        }
 
         if (currentHealth <= 0)
         {
@@ -35,6 +45,11 @@ public class EnemyHealth : MonoBehaviour
         }
 
         UpdateHealthBar();
+    }
+
+    void ShowPopupText()
+    {
+        Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
     }
 
     void UpdateHealthBar()
