@@ -3396,7 +3396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e3b8d9d7e7bba42861e33fb4161f9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   playerHealth: {fileID: 0}
   deathMenu: {fileID: 0}
 --- !u!114 &5091677727150262735
@@ -3428,8 +3428,6 @@ MonoBehaviour:
   bow: {fileID: 3445094828760673000}
   sword: {fileID: 6433474369175096363}
   _isAttacking: 0
-  damagePopupPrefab: {fileID: 0}
-  damagePopupSpawnPoint: {fileID: 0}
 --- !u!136 &8704107641007292003
 CapsuleCollider:
   m_ObjectHideFlags: 0
