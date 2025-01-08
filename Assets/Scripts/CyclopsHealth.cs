@@ -45,7 +45,7 @@ public class CyclopsHealth : MonoBehaviour
     {
 
         CyclopsAI cyclopsAI = GetComponentInParent<CyclopsAI>();
-
+        EnemyManager.Instance.OnEnemyKilled(gameObject);
 
         if (cyclopsAI == null)
         {

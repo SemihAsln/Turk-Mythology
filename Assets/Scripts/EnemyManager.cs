@@ -22,13 +22,15 @@ public class EnemyManager : MonoBehaviour
 
     private void Start()
     {
-        // Leveldeki tüm Enemy tagine sahip objeleri bul ve listeye ekle
         GameObject[] enemyObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (var enemy in enemyObjects)
+        {
+            Debug.Log("Bulunan düþman: " + enemy.name);
+        }
         enemies.AddRange(enemyObjects);
-
-        // Interactable objeyi baþlangýçta kapat
         interactableObject.SetActive(false);
     }
+
 
     // Enemy öldüðünde çaðýrýlacak fonksiyon
     public void OnEnemyKilled(GameObject enemy)

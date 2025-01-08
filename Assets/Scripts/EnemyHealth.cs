@@ -53,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
     {
 
         EnemyAI enemyAI = GetComponentInParent<EnemyAI>();
-
+        EnemyManager.Instance.OnEnemyKilled(gameObject);
 
         if (enemyAI == null)
         {
