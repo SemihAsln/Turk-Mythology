@@ -27,7 +27,7 @@ public class DeathMenu : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1; // Oyunu yeniden baþlatýr.
-        //SceneManager.LoadScene("MainMenu"); // Ana menü sahnesini yükler.
+        SceneManager.LoadScene("MainMenu"); // Ana menü sahnesini yükler.
     }
 
     public void ReloadScene()

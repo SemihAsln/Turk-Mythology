@@ -121,13 +121,17 @@ MonoBehaviour:
   subtitleText: {fileID: 9135969035873537639}
   audioSource: {fileID: 3063843734273487124}
   subtitles:
-  - 'Helo '
-  - "bu bi deneme yaz\u0131s\u0131d\u0131r"
-  - "\xF6le"
+  - "Bu hikaye, daha \xF6nce anlat\u0131lmam\u0131\u015F bir hikaye"
+  - "Hayat\u0131n\u0131 ac\u0131 ve \xE7aresizliklerle ge\xE7irmi\u015F yaln\u0131z
+    bir Ka\xE7gun\u2019un hikayesi."
+  - "Ne bir ad\u0131 ne de kendisiyle beraber gelen bir \u015Fan\u0131 var."
+  - "Bendenize de size bu hikayeyi anlatmak d\xFC\u015Fer. Hi\xE7bir \u015Feyi olmayan
+    bir adam\u0131n, g\xF6\u011Fe yolculu\u011Fu\u2026"
   subtitleTimings:
-  - 2
   - 3
-  - 1
+  - 5
+  - 3
+  - 8
 --- !u!1 &3400669697711113942
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +178,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6fefde935ab3db1488edbb9444d9b4e2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -294,8 +298,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20.864502, y: -271.09045}
-  m_SizeDelta: {x: -645.0718, y: -595.1141}
+  m_AnchoredPosition: {x: 193.36902, y: -447.25665}
+  m_SizeDelta: {x: -954.8769, y: -949.8411}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8719657733770751287
 CanvasRenderer:
@@ -369,8 +373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.6597, y: -274}
-  m_SizeDelta: {x: 669.5518, y: 44.5}
+  m_AnchoredPosition: {x: 195.8798, y: -463.98947}
+  m_SizeDelta: {x: 850.135, y: 96.7148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7946244565038033066
 CanvasRenderer:
