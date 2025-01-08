@@ -1264,7 +1264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7badc9c578cc34cbdadb980982f2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloatingTextPrefab: {fileID: 8380358482840548555, guid: e1c2ba99cfa79ad4c993b98c196f043e, type: 3}
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 7928282672680190561}
@@ -1320,7 +1319,7 @@ MonoBehaviour:
   attackRange: 5
   playerInSightRange: 0
   playerInAttackRange: 0
-  dirtPrefab: {fileID: 0}
+  dirtPrefab: {fileID: 4690635340773107382, guid: fee2f1908ce700945a97831821202aa7, type: 3}
   dirtspawnpoint: {fileID: 3775622394210145460}
   bulletSpeed: 10
 --- !u!136 &1009985566030861474
