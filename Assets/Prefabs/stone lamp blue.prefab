@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &882423977043659213
+--- !u!1001 &3404380606003162809
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2727728595814925450}
+    m_TransformParent: {fileID: 8766008947641181876}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
       propertyPath: m_LocalScale.x
@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 87496e752afe54f4f9ce8f8569f0e575, type: 2}
+      objectReference: {fileID: 2100000, guid: 916456bfd1250244aa1bd7a666b8247c, type: 2}
     - target: {fileID: 919132149155446097, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
       propertyPath: m_Name
       value: stone lamp crystal
@@ -74,26 +74,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2701952366491701396}
+      addedObject: {fileID: 3440219960933630208}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
---- !u!1 &71941318149190812 stripped
+--- !u!1 &2593972017040528360 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
-  m_PrefabInstance: {fileID: 882423977043659213}
+  m_PrefabInstance: {fileID: 3404380606003162809}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &2701952366491701396
+--- !u!108 &3440219960933630208
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71941318149190812}
+  m_GameObject: {fileID: 2593972017040528360}
   m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6154237, b: 0, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0, g: 0.39235067, b: 1, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -143,12 +143,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!4 &843376631463865894 stripped
+--- !u!4 &2933096125352200530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3bb8591f59f6dad40ba9dafceb3941ee, type: 3}
-  m_PrefabInstance: {fileID: 882423977043659213}
+  m_PrefabInstance: {fileID: 3404380606003162809}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2472599108054164321
+--- !u!1001 &9092107721384198495
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -170,15 +170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.26
+      value: 143.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 70.00549
+      value: 72.68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100.11
+      value: 111.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_LocalRotation.w
@@ -214,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f447550fd98ec804bb719318d3018c4b, type: 2}
     - target: {fileID: 919132149155446097, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_Name
-      value: stone lamp orange
+      value: stone lamp blue
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       propertyPath: m_IsActive
@@ -225,29 +225,24 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 843376631463865894}
+      addedObject: {fileID: 2933096125352200530}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7197802488268551253}
+      addedObject: {fileID: -3871066847048978713}
   m_SourcePrefab: {fileID: 100100000, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
---- !u!4 &2727728595814925450 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
-  m_PrefabInstance: {fileID: 2472599108054164321}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3355469898448444976 stripped
+--- !u!1 &8281220439124753422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
-  m_PrefabInstance: {fileID: 2472599108054164321}
+  m_PrefabInstance: {fileID: 9092107721384198495}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &7197802488268551253
+--- !u!64 &-3871066847048978713
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3355469898448444976}
+  m_GameObject: {fileID: 8281220439124753422}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -263,3 +258,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
+--- !u!4 &8766008947641181876 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42559aa47855f49478b8dbf448f01822, type: 3}
+  m_PrefabInstance: {fileID: 9092107721384198495}
+  m_PrefabAsset: {fileID: 0}
