@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/5.kat.unity
     guid: fd482c8730f23844d92439d1f4c68ec6
   - enabled: 1
+    path: "Assets/Scenes/Boss Kat\u0131 6.kat.unity"
+    guid: 4e31455407669844db28e9f998d3bfa7
+  - enabled: 1
     path: Assets/Scenes/7.kat.unity
     guid: a19a658af98867e4da45b65016671c3c
   - enabled: 1
