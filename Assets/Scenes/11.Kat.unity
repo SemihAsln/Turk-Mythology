@@ -4705,6 +4705,289 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].lineText
+      value: "Ah, kim bu yorgun sava\u015F\xE7\u0131? Yolu buraya kadar getiren kim?
+        S\xF6yle bana, g\xFCzel yabanc\u0131, seni bu g\xF6\u011Fe getiren nedir?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].lineText
+      value: "Ben bir sava\u015F\xE7\u0131 de\u011Filim. Yaln\u0131zca bir yolcuyum.
+        Ya\u015Fam\u0131n anlam\u0131n\u0131 ve varolu\u015Fun nedenini \xF6\u011Frenmek
+        i\xE7in g\xF6\u011F\xFCn katlar\u0131n\u0131 t\u0131rman\u0131yorum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].lineText
+      value: "Ne cesur bir aray\u0131\u015F! Ama s\xF6yle bana, bu kadar zorlu\u011Fa
+        katlanacak kadar g\xFC\xE7l\xFC bir iradeye ve kalbe sahip misin? Yoksa yaln\u0131zca
+        g\xFCzel bir y\xFCz ve bo\u015F bir ruh mu ta\u015F\u0131yorsun?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].lineText
+      value: "Kalbimin g\xFCzelli\u011Fi seni ilgilendirmez, tanr\u0131\xE7a. G\xFCc\xFCm\xFC
+        kan\u0131tlamak i\xE7in buraya gelmedim. Yoluma devam etmek istiyorum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].lineText
+      value: "Ne kadar da acelecisin! Ama bak\u0131yorum ki, g\xF6zlerin yaln\u0131zca
+        yola de\u011Fil, ba\u015Fka yerlere de bak\u0131yor. S\xF6yle bana, hi\xE7
+        a\u015Fk\u0131 tatt\u0131n m\u0131? Hi\xE7 kalbinin derinliklerinde bir ba\u015Fkas\u0131
+        i\xE7in yanan bir ate\u015F hissettin mi?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].lineText
+      value: "A\u015Fk bir zay\u0131fl\u0131kt\u0131r. Benim yolumda yeri yok."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].lineText
+      value: "Zay\u0131fl\u0131k m\u0131? Ah, a\u015Fk, bir insan\u0131 g\xF6klere
+        \xE7\u0131karan ya da yerin dibine g\xF6men en g\xFC\xE7l\xFC duygudur. Ama
+        senin gibi bir sava\u015F\xE7\u0131n\u0131n bunu anlamas\u0131n\u0131 beklemek
+        fazla olurdu. Belki de bunu sana \xF6\u011Fretmeliyim."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].lineText
+      value: "Senin gibi g\xFC\xE7l\xFC ve kararl\u0131 bir yolcuyla bir \xF6m\xFCr
+        ge\xE7irmek... Ne b\xFCy\xFCk bir mutluluk olurdu! Ka\xE7gun, benimle kal.
+        G\xFCzellik ve huzur i\xE7inde bir hayat seni bekliyor. Daha fazlas\u0131n\u0131
+        aramana gerek kalmaz."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].lineText
+      value: "Benim yolum huzur ya da g\xFCzellik de\u011Fil. Bu d\xFCnyada kalbimi
+        dolduracak bir \u015Fey yok. Yoluma devam edece\u011Fim."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].lineText
+      value: "Ne kadar da inat\xE7\u0131s\u0131n! Ama bu, seni daha da \xE7ekici
+        k\u0131l\u0131yor. S\xF6yle bana, kalbini kim \xE7ald\u0131? Kimsenin giremedi\u011Fi
+        bu buz gibi duvarlar\u0131n ard\u0131nda bir isim olmal\u0131."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf4f1ac3a4c0581438d73cfa8c73096b, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].lineText
+      value: "Kalbimin bir sahibi yok. Ama bu, seni ilgilendirmez. Yoluma devam edece\u011Fim,
+        Ay\u0131z\u0131t. Ne g\xFCzelli\u011Fin ne de s\xF6zlerin beni durdurabilir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[11].lineText
+      value: "Ah, Ka\xE7gun! Kalbin buz kadar so\u011Fuk olabilir, ama yolun boyunca
+        ate\u015Fle kar\u015F\u0131la\u015Facaks\u0131n. Umar\u0131m o g\xFCn geldi\u011Finde
+        bu kadar kararl\u0131 kalabilirsin. Git o zaman! Ama unutma, g\xFCzellik
+        her zaman seni takip edecek."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[12].lineText
+      value: "Yolun a\xE7\u0131k olsun, yolcu. Ama unutma, bu g\xF6\u011F\xFCn \xE7i\xE7ekleri
+        bir g\xFCn seni hat\u0131rlayacak."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f0fc211fac645e242b62b8920855fb8d, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f680d2e2b4843d41b7f62c506032a02, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a5f6effca41b049478401d371a2b584d, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eaab3ef81607de44580a98beb94b2b15, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0a8cfffd9b570242be869506244f0ad, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fd08239af8f25bf4795899708fe03ccd, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5641be01d18b78842b476eeac6def383, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dbeca80cd7009fe4a8f191d63cbbac75, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f611de448af0d44b9f89cc7a7cbd384, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c6cbbe79f50ffc8459e145cffe488176, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[11].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 712e4ac9bbea6ff44b31ef5316fe8a52, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[12].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fbd20205f0933d4a93cdd20e58f17b8, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[11].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[12].characterName
+      value: "Ay\u0131z\u0131t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[11].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[11].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[12].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4905ebcac6e1a0146b26d591cf6b22d6, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[12].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6205351768022984943, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_Name
       value: Canvas

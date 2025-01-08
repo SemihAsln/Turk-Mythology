@@ -11981,6 +11981,252 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].lineText
+      value: "Yolcu! Bu topraklara ad\u0131m atan her canl\u0131, g\xFCc\xFCn\xFC
+        ispat etmek zorundad\u0131r. S\xF6yle bana, ne i\xE7in sava\u015F\u0131yorsun?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].lineText
+      value: "Ben sava\u015F\xE7\u0131 de\u011Filim. Buraya cevaplar bulmak i\xE7in
+        geldim. Ya\u015Faman\u0131n ve bu \xE7ilenin anlam\u0131n\u0131 \xF6\u011Frenmek
+        istiyorum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].lineText
+      value: "Ya\u015Faman\u0131n anlam\u0131n\u0131 m\u0131? \u0130nsan, sava\u015Fmad\u0131\u011F\u0131
+        s\xFCrece ya\u015Famay\u0131 hak edemez. Her nefes, bir m\xFCcadele; her
+        ad\u0131m, bir meydan okumad\u0131r. E\u011Fer sava\u015Fmay\u0131 reddediyorsan,
+        ya\u015Famak i\xE7in bir sebebin yok demektir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].lineText
+      value: "Sava\u015Fmak m\u0131? Hayat\u0131n anlam\u0131 bu mu? \xC7ekilen ac\u0131lar,
+        d\xF6k\xFClen kanlar... Hepsi yaln\u0131zca bir m\xFCcadele mi? Bu, bir sebep
+        de\u011Fil, yaln\u0131zca bir d\xF6ng\xFC!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].lineText
+      value: "Sebep dedi\u011Fin \u015Fey, sava\u015Ft\u0131\u011F\u0131n anda ortaya
+        \xE7\u0131kar. Hayat, sava\u015Farak de\u011Fer kazan\u0131r. Kendini kan\u0131tla,
+        yolcu! E\u011Fer ya\u015Famaya lay\u0131k oldu\u011Funu g\xF6stermek istiyorsan,
+        benimle sava\u015F!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].lineText
+      value: "Ben buraya sava\u015Fmaya de\u011Fil, \xF6\u011Frenmeye geldim. E\u011Fer
+        yoluma devam etmek i\xE7in seni yenmem gerekiyorsa, bu da anlams\u0131z bir
+        s\u0131navd\u0131r. Beni durdurmaya \xE7al\u0131\u015F\u0131yorsan, bo\u015Funa."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].lineText
+      value: "\xD6\u011Frenmek istiyorsan, sava\u015F! \xC7\xFCnk\xFC sava\u015Fta
+        \xF6\u011Frenilen dersler, bir \xF6m\xFCr boyu unutulmaz. E\u011Fer k\u0131l\u0131c\u0131n\u0131
+        kald\u0131rmasayd\u0131n, buraya yakla\u015Famazd\u0131n bile!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].lineText
+      value: "E\u011Fer sava\u015Fmak istiyorsan, seni durdurmam. Ama bu, benim yolculu\u011Fumu
+        de\u011Fi\u015Ftirmeyecek. Ya\u015Famak i\xE7in sava\u015Fmaktan daha b\xFCy\xFCk
+        bir sebep olmal\u0131."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].lineText
+      value: "Buraya kadar m\xFCcadele ettin, pes etmedin. Yoluna devam edebilirsin,
+        yolcu. Ama unutma: Ya\u015Faman\u0131n de\u011Feri, sava\u015Fman\u0131n
+        kendisindedir. Hayat, teslim olanlara de\u011Fil, direnenlere aittir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].lineText
+      value: "Belki hakl\u0131s\u0131n. Ama benim sava\u015F\u0131m, k\u0131l\u0131\xE7la
+        de\u011Fil, sorular\u0131mla. Yoluma devam edece\u011Fim, K\u0131za\u011Fan
+        Han. Sava\u015F meydan\u0131n sana kalabilir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e173f15a63508046bf3a51899e5e981, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].lineText
+      value: "\xD6yle olsun. Ama unutma: Her yol, sonunda bir sava\u015Fa \xE7\u0131kar.
+        O g\xFCn geldi\u011Finde, haz\u0131r ol."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9b86b0ace96058478409b72a975845c, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 102943405a1f7564f84b960ed68a4eba, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a8415be42e494943b0e51a2d5e17b71, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e523d361812c274886a89409d84fc97, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e405573b1bb8fe4a9c91048c16ca663, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26213fb351abf4f4bb6ff0cb41ab79a9, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 90c8d1043a748fc43a2efdd96333c8fa, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a8af8b239eb76f44c9932ae851fce8c0, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cab6a343e621ed849a306ae37485ce16, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 024e384d6e93c4a4d8d0b740a493790c, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].characterName
+      value: "Ka\xE7gun"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].characterName
+      value: "K\u0131za\u011Fan Han"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[0].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[1].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[2].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[3].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[4].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[7].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[8].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58dbd7ab36ef1a34a8aeeb789df34c59, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[9].textBoxPosition
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c74c5e39b758e94cafb39fdbebcc3e3, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[10].textBoxPosition
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5220953494423193518, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
