@@ -1637,7 +1637,7 @@ PrefabInstance:
     - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: lines.Array.data[5].lineText
       value: "Ruhumun a\u011F\u0131rl\u0131\u011F\u0131 beni zapt edemez. Yolumu
-        g\xF6ster, Erlik.\""
+        g\xF6ster, Erlik."
       objectReference: {fileID: 0}
     - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: lines.Array.data[6].lineText
@@ -1664,6 +1664,14 @@ PrefabInstance:
       propertyPath: lines.Array.data[4].voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: 5f6b75d7e0cda9640880bac35afa25cc, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[5].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 35036a4f4aceda04ba4d59d1858ad7e5, type: 3}
+    - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: lines.Array.data[6].voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cabf4119102d634ea14d5e0bc0c5568, type: 3}
     - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: lines.Array.data[0].characterName
       value: Erlik
@@ -1842,11 +1850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9074817205845598079, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

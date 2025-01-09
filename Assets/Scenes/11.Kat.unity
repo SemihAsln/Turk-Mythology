@@ -5098,7 +5098,7 @@ PrefabInstance:
     - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: lines.Array.data[4].voiceClip
       value: 
-      objectReference: {fileID: 8300000, guid: eaab3ef81607de44580a98beb94b2b15, type: 3}
+      objectReference: {fileID: 8300000, guid: fbfbd92d21ed6bd47aa3dd320b651b83, type: 3}
     - target: {fileID: 2619646835378606512, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: lines.Array.data[5].voiceClip
       value: 
@@ -5286,6 +5286,14 @@ PrefabInstance:
     - target: {fileID: 6205351768022984943, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9215101068656473689, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_Pivot.x
