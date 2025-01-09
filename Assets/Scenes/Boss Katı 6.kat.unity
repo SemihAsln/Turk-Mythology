@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 66c857c26082c834181c91a2dc9f0b9f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: e7c2d5e299ff36a4b84528def5a2efd4, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &273952788
 Transform:
@@ -5594,6 +5594,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8766008947641181876, guid: 02b1a92d6ab577d4b8307a4feae38cfc, type: 3}
   m_PrefabInstance: {fileID: 1684288071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000379446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000379448}
+  - component: {fileID: 2000379447}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2000379447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000379446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e376d5003706c74587d08386973547d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionDistance: 2
+  interactionKey: 101
+--- !u!4 &2000379448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000379446}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.34508, y: 103.6674, z: 79.44361}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003895238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6385,6 +6431,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491764187765672093, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 9074817205845598079, guid: e46fb18044112d64e8be09bcee22ac1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -6571,3 +6625,4 @@ SceneRoots:
   - {fileID: 2025486033}
   - {fileID: 2112984912}
   - {fileID: 810662390}
+  - {fileID: 2000379448}
